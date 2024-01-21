@@ -11,7 +11,7 @@ body{
   }
 
 .banner{
-  background-image: url(/img/bg.jpg);
+  background-image: URL(./img/bg.jpg);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ a::after{
 
 
 #historySection{
-  background-image: url(/img/bg-2.png);
+  background-image: URL(./img/bg-2.png);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ a::after{
 }
 
 .teamMain{
-  background-image: url(/img/bg-3.png);
+  background-image: URL(./img/bg-3.png);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
