@@ -11,7 +11,7 @@ body{
   }
 
 .banner{
-  background-image: URL(./img/bg.jpg);
+  background-image: url(./img/bg.jpg);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ a::after{
 
 
 #historySection{
-  background-image: URL(./img/bg-2.png);
+  background-image: url(./img/bg-2.png);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +203,12 @@ a::after{
 }
 
 .teamMain{
-  background-image: URL(./img/bg-3.png);
+
+
+}
+
+.tab1{
+  background-image: url(./img/bg-3.png);
   background-size:cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -211,7 +216,31 @@ a::after{
   height: 100vh;
 }
 
+.tab2{
+  background-image: url(./img/bg-4.png);
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tab span{
+  cursor: pointer;
+}
+
+.tabClose{
+
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
 .tabContainer{
+  display: flex;
+
+}
+.tabNav{
   display: flex;
   background-color:  #435b8a;
   opacity: 0.8;
