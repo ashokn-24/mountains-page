@@ -1,17 +1,19 @@
-window.scroll({
-  top: 1000,
-  left: 0,
-  behavior: "smooth",
+let mountOne = document.getElementById("mount1");
+let mountTwo = document.getElementById("mount2");
+
+let tabOne = document.querySelector(".tab1");
+let tabTwo = document.querySelector(".tab2");
+
+console.log(tabOne, tabTwo);
+
+mountTwo.addEventListener("click", function () {
+  tabOne.classList.add("tabClose");
+  tabTwo.classList.remove("tabClose");
+  console.log("click");
 });
 
-// Scroll certain amounts from current position
-window.scrollBy({
-  top: 250, // could be negative value
-  left: 0,
-  behavior: "smooth",
-});
-
-// Scroll to a certain element
-document.getElementById("el").scrollIntoView({
-  behavior: "smooth",
+mountOne.addEventListener("click", function () {
+  tabTwo.classList.add("tabClose");
+  tabOne.classList.remove("tabClose");
+  console.log("click");
 });
